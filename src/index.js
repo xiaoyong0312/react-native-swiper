@@ -490,7 +490,7 @@ export default class extends Component {
   }
 
   renderTitle = () => {
-    const child = this.props.children[this.state.index]
+    const child = this.props.children && this.props.children[this.state.index]
     const title = child && child.props && child.props.title
     return title
       ? (<View style={styles.title}>
